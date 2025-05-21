@@ -1,0 +1,30 @@
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.avatar {
+  flex: 0 1 calc(50% - 20px);
+  max-height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  height: auto;
+  min-width: 0;
+}
+
+.about__info {
+  flex: 0 1 calc(50% - 20px);
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+  }
+}

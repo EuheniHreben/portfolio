@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <h1>Женя</h1>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#about" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contact" class="menu__link">Contact</a>
+              </li>
+              <li class="menu__item">
+                <a href="#skills" class="menu__link">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a href="#projects" class="menu__link">Projects</a>
+              </li>
+            </ul>
+          </nav>
+          <button id="btnTheme" class="btn btn--theme">Theme</button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about" id="about">
+          <div class="container about-container">
+            <img
+              src="images/photo.jpg"
+              alt="My avatar"
+              class="avatar"
+              loading="lazy"
+            />
+            <div class="about__info">
+              <h2>Обо мне</h2>
+              <p>
+                Я начинающий фронтенд-разработчик с фокусом на React и
+                JavaScript. Люблю создавать красивые и удобные интерфейсы,
+                постоянно учусь и совершенствуюсь. До программирования я
+                профессионально занимался покером. Этот опыт научил меня
+                работать в условиях высокой неопределённости, быстро
+                адаптироваться, анализировать ошибки и принимать решения под
+                давлением — навыки, которые я ежедневно применяю и в разработке.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="container contact-container">
+            <h2>Contact</h2>
+            <p>
+              Email:
+              <a href="mailto:euhenihreben@gmail.com">euhenihreben@gmail.com</a>
+            </p>
+            <p>
+              GitHub:
+              <a href="https://github.com/EuheniHreben"
+                >https://github.com/EuheniHreben</a
+              >
+            </p>
+            <p>
+              Telegram:
+              <a href="https://t.me/@dharmaMannn" target="_blank"
+                >@dharmaMannn</a
+              >
+            </p>
+            <button class="btn btn_type_second">Скачать резюме</button>
+          </div>
+        </section>
+        <section class="skills" id="skills">
+          <div class="container skills-container">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript (в процессе)</li>
+            </ul>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <div class="container projects-container">
+            <h2>Проекты</h2>
+            <form>
+              <input
+                id="searchInput"
+                type="text"
+                placeholder="search projects..."
+              />
+            </form>
+            <div id="projects-content" class="projects-content"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container footer-container">
+          <p>© 2025 Женя</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
