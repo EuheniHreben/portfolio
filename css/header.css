@@ -17,7 +17,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 20px; */
 }
 
 .menu__list {
@@ -34,7 +33,7 @@ header {
     justify-content: space-around;
   }
   .menu__list {
-    gap: 16px;
+    gap: 14px;
   }
   header h1 {
     display: none;
@@ -42,7 +41,7 @@ header {
 }
 
 .menu__item {
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   cursor: pointer;
   position: relative;
   display: inline-block;

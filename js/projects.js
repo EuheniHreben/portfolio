@@ -5,34 +5,34 @@ const projects = [
   {
     title: "Surfboard Store",
     description: "One page сайт для продажи сёрфбордов с плавной прокруткой.",
-    image: "images/project2.png",
+    image: "images/projects/project2.jpg",
     url: "https://euhenihreben.github.io/Surfboard/",
   },
   {
     title: "Video Production",
     description: "Многостраничный сайт для студии видеосъёмки.",
-    image: "images/project4.png",
+    image: "images/projects/project4.jpg",
     url: "https://euhenihreben.github.io/Video/",
   },
   {
     title: "Indonesia Travel",
     description:
       "Одностраничный сайт о путешествиях и достопримечательностях Индонезии.",
-    image: "images/project5.png",
+    image: "images/projects/project5.jpg",
     url: "https://euhenihreben.github.io/Qwery/",
   },
   {
     title: "Mileage Tracker",
     description:
       "Интерактивная карточка с вращением для учёта пробега автомобиля.",
-    image: "images/project1.png",
+    image: "images/projects/project1.png",
     url: "https://euhenihreben.github.io/cardRoll/",
   },
   {
     title: "Color Palette Picker",
     description:
       "Одностраничный сайт для подбора совместимых цветовых сочетаний.",
-    image: "images/project3.png",
+    image: "images/projects/project3.png",
     url: "https://euhenihreben.github.io/Colors/",
   },
 ];
