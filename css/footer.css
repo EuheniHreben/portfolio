@@ -1,7 +1,8 @@
 footer {
+  box-shadow: 0 2px 14px #000;
   background-color: #333;
   color: white;
-  padding: 2rem 0;
+  padding: 25px 0;
 }
 
 .footer-container {

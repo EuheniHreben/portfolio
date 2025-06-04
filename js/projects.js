@@ -3,16 +3,16 @@ const content = document.getElementById("projects-content");
 
 const projects = [
   {
-    title: "Surfboard Store",
-    description: "One page сайт для продажи сёрфбордов с плавной прокруткой.",
-    image: "images/projects/project2.jpg",
-    url: "https://euhenihreben.github.io/Surfboard/",
-  },
-  {
     title: "Video Production",
     description: "Многостраничный сайт для студии видеосъёмки.",
     image: "images/projects/project4.jpg",
     url: "https://euhenihreben.github.io/Video/",
+  },
+  {
+    title: "Surfboard Store",
+    description: "One page сайт для продажи сёрфбордов с плавной прокруткой.",
+    image: "images/projects/project2.jpg",
+    url: "https://euhenihreben.github.io/Surfboard/",
   },
   {
     title: "Indonesia Travel",
@@ -22,6 +22,13 @@ const projects = [
     url: "https://euhenihreben.github.io/Qwery/",
   },
   {
+    title: "Color Palette Picker",
+    description:
+      "Одностраничный сайт для подбора совместимых цветовых сочетаний.",
+    image: "images/projects/project3.png",
+    url: "https://euhenihreben.github.io/Colors/",
+  },
+  {
     title: "Mileage Tracker",
     description:
       "Интерактивная карточка с вращением для учёта пробега автомобиля.",
@@ -29,11 +36,11 @@ const projects = [
     url: "https://euhenihreben.github.io/cardRoll/",
   },
   {
-    title: "Color Palette Picker",
+    title: "Food Market",
     description:
-      "Одностраничный сайт для подбора совместимых цветовых сочетаний.",
-    image: "images/projects/project3.png",
-    url: "https://euhenihreben.github.io/Colors/",
+      "Адаптивная страница с карточками блюд для онлайн-магазина еды.",
+    image: "images/projects/project6.jpg",
+    url: "https://euhenihreben.github.io/FoodShop/",
   },
 ];
 

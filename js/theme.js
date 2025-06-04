@@ -1,6 +1,7 @@
 const btnTheme = document.getElementById("btnTheme");
 const mainSection = document.querySelector(".main");
 const projectCard = document.querySelector(".project-card");
+const btns = document.querySelectorAll('.btn')
 
 function updateButtonText() {
   if (document.body.classList.contains("dark")) {
@@ -21,6 +22,10 @@ btnTheme.addEventListener("click", (e) => {
   e.preventDefault();
   document.body.classList.toggle("dark");
   mainSection.classList.toggle("dark");
+  btns.forEach(btn => {
+    btn.classList.toggle('btn_type_second')
+
+  })
 
   updateButtonText();
 
