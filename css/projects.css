@@ -7,22 +7,25 @@
 }
 
 .projects form {
-  display: flex;
   width: 100%;
-  justify-content: center;
   margin-bottom: 40px;
 }
 
 input {
   display: flex;
-  width: 80%;
-  background-color: #444;
-  color: #fff;
+  width: 100%;
+  background-color: #e0e0e0;
   margin: 5px 0;
   margin-right: -22px;
   padding: 10px;
+  color: #000;
   border: none;
   border-radius: 5px;
+}
+
+body.dark input {
+  background-color: #444;
+  color: #fff;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -47,7 +50,7 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #333;
   background-color: #e0e0e0;
   text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   opacity: 0;
   animation: fadeInUp 0.3s ease forwards;
   transform: translateY(40px) scale(0.8);
@@ -80,8 +83,8 @@ body.dark .project-card {
 @media (hover: hover) and (pointer: fine) {
   .project-card:hover {
     background-color: #007acc;
-    color: white;
     box-shadow: 0 4px 12px rgba(0, 122, 204, 0.6);
+    color: white;
   }
   .project-card:hover img {
     transform: scale(1.2);

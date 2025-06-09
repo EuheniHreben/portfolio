@@ -10,7 +10,7 @@ const projects = [
   },
   {
     title: "Surfboard Store",
-    description: "One page сайт для продажи сёрфбордов с плавной прокруткой.",
+    description: "Сайт с интерактивной навигацией и плавной прокруткой для продажи сёрфбордов.",
     image: "images/projects/project2.jpg",
     url: "https://euhenihreben.github.io/Surfboard/",
   },
@@ -24,15 +24,15 @@ const projects = [
   {
     title: "Color Palette Picker",
     description:
-      "Одностраничный сайт для подбора совместимых цветовых сочетаний.",
-    image: "images/projects/project3.png",
+      "Сайт для подбора совместимых цветовых сочетаний.",
+    image: "images/projects/project3.jpg",
     url: "https://euhenihreben.github.io/Colors/",
   },
   {
     title: "Mileage Tracker",
     description:
       "Интерактивная карточка с вращением для учёта пробега автомобиля.",
-    image: "images/projects/project1.png",
+    image: "images/projects/project1.jpg",
     url: "https://euhenihreben.github.io/cardRoll/",
   },
   {
@@ -41,6 +41,13 @@ const projects = [
       "Адаптивная страница с карточками блюд для онлайн-магазина еды.",
     image: "images/projects/project6.jpg",
     url: "https://euhenihreben.github.io/FoodShop/",
+  },
+  {
+    title: "Daily Task List",
+    description:
+      "Простой и удобный список задач на каждый день с функцией отметки выполненных пунктов.",
+    image: "images/projects/project7.jpg",
+    url: "https://euhenihreben.github.io/ToDoList/",
   },
 ];
 
