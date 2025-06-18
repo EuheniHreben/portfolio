@@ -3,47 +3,47 @@ const content = document.getElementById("projects-content");
 
 const projects = [
   {
-    title: "Video Production",
+    title: "Видеопродакшн",
     description: "Многостраничный сайт для студии видеосъёмки.",
     image: "images/projects/project4.jpg",
     url: "https://euhenihreben.github.io/Video/",
   },
   {
-    title: "Surfboard Store",
-    description: "Сайт с интерактивной навигацией и плавной прокруткой для продажи сёрфбордов.",
+    title: "Магазин сёрфбордов",
+    description:
+      "Сайт с интерактивной навигацией и плавной прокруткой для продажи сёрфбордов.",
     image: "images/projects/project2.jpg",
     url: "https://euhenihreben.github.io/Surfboard/",
   },
   {
-    title: "Indonesia Travel",
+    title: "Путешествия по Индонезии",
     description:
       "Одностраничный сайт о путешествиях и достопримечательностях Индонезии.",
     image: "images/projects/project5.jpg",
     url: "https://euhenihreben.github.io/Qwery/",
   },
   {
-    title: "Color Palette Picker",
-    description:
-      "Сайт для подбора совместимых цветовых сочетаний.",
+    title: "Подбор цветовой палитры",
+    description: "Сайт для подбора совместимых цветовых сочетаний.",
     image: "images/projects/project3.jpg",
     url: "https://euhenihreben.github.io/Colors/",
   },
   {
-    title: "Mileage Tracker",
+    title: "Учёт пробега",
     description:
       "Интерактивная карточка с вращением для учёта пробега автомобиля.",
     image: "images/projects/project1.jpg",
     url: "https://euhenihreben.github.io/cardRoll/",
   },
   {
-    title: "Food Market",
+    title: "Маркет еды",
     description:
       "Адаптивная страница с карточками блюд для онлайн-магазина еды.",
     image: "images/projects/project6.jpg",
     url: "https://euhenihreben.github.io/FoodShop/",
   },
   {
-    title: "Daily Task List",
+    title: "Список задач на день",
     description:
       "Простой и удобный список задач на каждый день с функцией отметки выполненных пунктов.",
     image: "images/projects/project7.jpg",
@@ -60,8 +60,10 @@ function insertProjects(projects) {
     link.style.animationDelay = `${index * 100}ms`;
     link.innerHTML = `
     <img src='${project.image}' alt='${project.title}' loading="lazy"/>
+    <div class="project-card__info">
     <h3>${project.title}</h3>
-    <p>${project.description}</p>`;
+    <p>${project.description}</p>
+    </div>`;
     content.appendChild(link);
   });
 }
