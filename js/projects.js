@@ -85,13 +85,13 @@ function projectsRender(projects) {
 
 projectsRender(projects);
 
-searchInput.addEventListener("input", (e) => {
-  e.preventDefault();
-  const query = e.target.value.toLowerCase();
-  const filtered = projects.filter(
-    (project) =>
-      project.title.toLowerCase().includes(query) ||
-      project.description.toLowerCase().includes(query)
-  );
-  projectsRender(filtered);
-});
+// searchInput.addEventListener("input", (e) => {
+//   e.preventDefault();
+//   const query = e.target.value.toLowerCase();
+//   const filtered = projects.filter(
+//     (project) =>
+//       project.title.toLowerCase().includes(query) ||
+//       project.description.toLowerCase().includes(query)
+//   );
+//   projectsRender(filtered);
+// });
