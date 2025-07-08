@@ -12,7 +12,6 @@
 }
 
 input {
-  display: flex;
   width: 100%;
   background-color: #e0e0e0;
   margin: 5px 0;
@@ -37,7 +36,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .projects-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 40px;
 }
 
 .project-card {
@@ -46,15 +45,15 @@ input[type="number"]::-webkit-outer-spin-button {
   cursor: pointer;
   overflow: hidden;
   height: 260px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
+  border-radius: 14px;
   color: #333;
   background-color: #e0e0e0;
   text-decoration: none;
-  box-shadow: 0 2px 14px #000;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.8);
   opacity: 0;
-  animation: fadeInUp 0.3s ease forwards;
-  transition: all .3s ease-out
+  animation: fadeInUp 0.2s ease forwards;
+  transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.2s ease;
 }
 
 body.dark .project-card {
@@ -64,7 +63,7 @@ body.dark .project-card {
 
 .project-card.fade-out {
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .project-card img {
@@ -76,7 +75,7 @@ body.dark .project-card {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.3s ease-in;
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in;
 }
 
 .project-card__info {
@@ -89,16 +88,13 @@ body.dark .project-card {
   color: white;
   padding: 30px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .project-card:hover {
-    transform: translateY(-6px);
-       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-  }
-  .project-card:hover img {
-    transform: scale(1.1);
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05) translateY(-5px) rotateX(1deg);
   }
 }
 
