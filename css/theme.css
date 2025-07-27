@@ -12,13 +12,15 @@
 
 .shift__layer {
   overflow: hidden;
-  margin-top: -5px;
+  margin-top: -1px;
 }
 
 .shift__layer-inner {
   height: 100%;
   background: #111;
   transform: translateY(-100%);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .shift.active .shift__layer-inner {
