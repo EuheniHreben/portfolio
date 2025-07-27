@@ -9,7 +9,7 @@ header {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 800;
   box-shadow: 0 2px 14px #000;
 }
 

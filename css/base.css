@@ -69,10 +69,6 @@ h6 {
   width: 95%;
 }
 
-main {
-  padding-top: 80px;
-}
-
 section {
   scroll-margin-top: 80px;
   margin-bottom: 60px;
@@ -95,4 +91,38 @@ h2 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+
+.header {
+  background: #ccc;
+  padding: 1rem;
+}
+
+.main {
+  background: #666;
+  padding: 1rem;
+  padding-top: 80px;
+}
+
+.footer {
+  background: #ddd;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+body.dark .header {
+  background-color: #1e2227;
+  color: #fff;
+}
+
+body.dark .main {
+  background-color: #2a2f36;
+  color: #eee;
+}
+
+body.dark .footer {
+  background-color: #1b1f24;
+  color: #ccc;
 }

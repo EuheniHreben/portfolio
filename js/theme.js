@@ -1,37 +1,46 @@
-const btnTheme = document.getElementById("btnTheme");
-const mainSection = document.querySelector(".main");
-const projectCard = document.querySelector(".project-card");
-const btns = document.querySelectorAll('.btn')
+const button = document.getElementById("themeToggle");
+const shift = document.querySelector(".shift");
+const body = document.body;
 
-function updateButtonText() {
-  if (document.body.classList.contains("dark")) {
-    btnTheme.textContent = "Dark Mode";
-  } else {
-    btnTheme.textContent = "Light Mode";
-  }
+function updateButtonText(isDark) {
+  button.textContent = isDark ? "Dark" : "Light";
 }
 
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-  mainSection.classList.add("dark");
+function setTheme(dark) {
+  if (dark) {
+    body.classList.add("dark");
+  } else {
+    body.classList.remove("dark");
+  }
+  localStorage.setItem("theme", dark ? "dark" : "light");
+  updateButtonText(dark);
 }
 
-updateButtonText();
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  setTheme(true);
+} else {
+  setTheme(false);
+}
 
-btnTheme.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.body.classList.toggle("dark");
-  mainSection.classList.toggle("dark");
-  btns.forEach(btn => {
-    btn.classList.toggle('btn_type_second')
+button.addEventListener("click", () => {
+  if (button.disabled) return;
+  button.disabled = true;
 
-  })
+  shift.classList.add("active");
 
-  updateButtonText();
+  setTimeout(() => {
+    const isDark = body.classList.contains("dark");
+    setTheme(!isDark);
+  }, 300);
 
-  if (document.body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
+  setTimeout(() => {
+    shift.classList.remove("active");
+    shift.classList.add("reverse");
+  }, 600);
+
+  setTimeout(() => {
+    shift.classList.remove("reverse");
+    button.disabled = false;
+  }, 620);
 });
